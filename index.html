@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOMAÏ — Restaurant Gastronomique à Fès</title>
+  <meta name="description" content="NOMAÏ, restaurant gastronomique à Fès. Cuisine méditerranéenne & japonaise. Pizzas artisanales, pâtes fraîches, sushis, viandes & poissons. Réservez votre table." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══ NAV ══ -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <span class="logo-leaf">✦</span>
+      <span>NOMAÏ</span>
+    </div>
+    <ul class="nav__links">
+      <li><a href="#histoire">Notre Histoire</a></li>
+      <li><a href="#menu">La Carte</a></li>
+      <li><a href="#galerie">Galerie</a></li>
+      <li><a href="#contact">Infos</a></li>
+      <li><a href="#reservation" class="nav__resa">Réserver une table</a></li>
+    </ul>
+    <button class="nav__burger" id="burger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <ul>
+      <li><a href="#histoire" class="ml">Notre Histoire</a></li>
+      <li><a href="#menu" class="ml">La Carte</a></li>
+      <li><a href="#galerie" class="ml">Galerie</a></li>
+      <li><a href="#contact" class="ml">Infos</a></li>
+      <li><a href="#reservation" class="ml">Réserver</a></li>
+    </ul>
+  </div>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal">— Fès, Maroc · Av. Omar Ibnou Khattab —</p>
+      <h1 class="hero__title reveal">
+        Méditerranée &amp; Japon<br/>
+        <em>au cœur de Fès</em>
+      </h1>
+      <p class="hero__sub reveal">
+        Pizzas artisanales, pâtes fraîches maison, sushis signature<br/>
+        et viandes grillées dans un cadre design unique.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#reservation" class="btn btn--gold">Réserver ma table</a>
+        <a href="#menu" class="btn btn--ghost">Découvrir la carte</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Défiler</span>
+      <div class="scroll-bar"></div>
+    </div>
+    <div class="hero__badge">
+      <div class="badge-stars">★★★★★</div>
+      <div class="badge-text">4.9 · TripAdvisor Fès</div>
+    </div>
+  </section>
+
+  <!-- ══ BANDEAU CHIFFRES ══ -->
+  <section class="chiffres">
+    <div class="chiffres__inner">
+      <div class="chiffre reveal">
+        <span class="chiffre__num" data-target="2">0</span>
+        <span class="chiffre__unit">univers</span>
+        <span class="chiffre__label">Médit. & Japonais</span>
+      </div>
+      <div class="chiffre-sep"></div>
+      <div class="chiffre reveal">
+        <span class="chiffre__num" data-target="13">0</span>
+        <span class="chiffre__unit">pizzas</span>
+        <span class="chiffre__label">Pâte 72h fermentée</span>
+      </div>
+      <div class="chiffre-sep"></div>
+      <div class="chiffre reveal">
+        <span class="chiffre__num" data-target="10">0</span>
+        <span class="chiffre__unit">rolls</span>
+        <span class="chiffre__label">Sushis maison</span>
+      </div>
+      <div class="chiffre-sep"></div>
+      <div class="chiffre reveal">
+        <span class="chiffre__num" data-target="72">0</span>
+        <span class="chiffre__unit">h</span>
+        <span class="chiffre__label">Fermentation pâte pizza</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ HISTOIRE ══ -->
+  <section class="histoire" id="histoire">
+    <div class="histoire__img reveal-left">
+      <div class="img-frame">
+        <div class="img-art chef-art">
+          <div class="art-plate"></div>
+          <div class="art-garnish"></div>
+          <div class="art-sauce"></div>
+        </div>
+      </div>
+      <div class="histoire__img-caption">
+        NOMAÏ — Fusion Méditerranéenne & Japonaise · Fès
+      </div>
+    </div>
+    <div class="histoire__content reveal-right">
+      <span class="section-eyebrow">Notre Histoire</span>
+      <h2 class="section-title">La cuisine comme <em>pont entre</em><br/>les cultures</h2>
+      <p>NOMAÏ est né d'une vision simple et audacieuse : réunir en un seul lieu les meilleures saveurs méditerranéennes et japonaises, au cœur de la ville impériale de Fès.</p>
+      <p>Chaque assiette est une invitation au voyage — des pizzas à pâte fermentée 72h, des pâtes fraîches faites maison chaque matin, et des sushis préparés avec les techniques les plus authentiques. <strong>Une expérience sensorielle à nulle autre pareille.</strong></p>
+      <div class="histoire__values">
+        <div class="valeur">
+          <span class="valeur__icon">🍕</span>
+          <div>
+            <strong>Pâte 72h</strong>
+            <span>Fermentée pour plus de légèreté</span>
+          </div>
+        </div>
+        <div class="valeur">
+          <span class="valeur__icon">🍝</span>
+          <div>
+            <strong>Pâtes fraîches</strong>
+            <span>Faites maison tous les jours</span>
+          </div>
+        </div>
+        <div class="valeur">
+          <span class="valeur__icon">🍣</span>
+          <div>
+            <strong>Sushis signature</strong>
+            <span>Techniques japonaises authentiques</span>
+          </div>
+        </div>
+      </div>
+      <a href="#contact" class="btn btn--outline">Nous trouver →</a>
+    </div>
+  </section>
+
+  <!-- ══ MENU ══ -->
+  <section class="menu" id="menu">
+    <div class="menu__header">
+      <span class="section-eyebrow">La Carte</span>
+      <h2 class="section-title reveal">Deux cuisines, <em>une seule passion</em></h2>
+      <p class="section-sub reveal">Tous nos produits sont frais · Pâtes fraîches maison chaque jour</p>
+      <div class="menu__tabs reveal">
+        <button class="tab-btn active" data-tab="salades">Salades</button>
+        <button class="tab-btn" data-tab="pates">Pâtes & Risottos</button>
+        <button class="tab-btn" data-tab="pizzas">Pizzas</button>
+        <button class="tab-btn" data-tab="viandes">Viandes & Poissons</button>
+        <button class="tab-btn" data-tab="japonais">Côté Japonais</button>
+        <button class="tab-btn" data-tab="desserts">Desserts</button>
+      </div>
+    </div>
+
+    <!-- SALADES -->
+    <div class="menu__panel active" id="tab-salades">
+      <!-- Category banner: real NOMAÏ restaurant interior with olive tree -->
+      <div class="menu__cat-banner">
+        <img src="img/dish-01.jpg" alt="Salle NOMAÏ" />
+        <div class="menu__cat-banner-text">
+          <h3>Entrées & Salades</h3>
+          <p>Fraîcheur du marché · Vinaigrettes maison</p>
+        </div>
+      </div>
+      <div class="dish-list dish-list--2col">
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Salade Burrata</span><span class="dish-item__tag">★ Signature</span></div><p class="dish-item__desc">Tomates cerises, mesclun de salade, pesto et crème de basilic</p></div><span class="dish-item__price">115 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Salade César Gambas</span></div><p class="dish-item__desc">Romaine, tomates cerises, œuf de caille, croutons, parmesan, gambas</p></div><span class="dish-item__price">95 Dhs</span></div>
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Salade César Poulet</span></div><p class="dish-item__desc">Romaine, tomates cerises, œuf de caille, croutons, parmesan, poulet grillé</p></div><span class="dish-item__price">85 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Salade du Fermier</span></div><p class="dish-item__desc">Mesclun, pommes de terre, champignons, brocoli, haricots verts, tomates cerise, œufs de caille, thon, vinaigrette maison</p></div><span class="dish-item__price">75 Dhs</span></div>
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Salade de Fruits de Mer</span></div><p class="dish-item__desc">Mesclun, calamars, poulpe et gambas, vinaigrette aromatisée au citron</p></div><span class="dish-item__price">125 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Salade façon NOMAÏ</span><span class="dish-item__tag">★ Signature</span></div><p class="dish-item__desc">Mesclun, fromage feta, fruits de saison, noix concassées et vinaigrette maison</p></div><span class="dish-item__price">90 Dhs</span></div>
+      </div>
+    </div>
+
+    <!-- PÂTES & RISOTTOS -->
+    <div class="menu__panel" id="tab-pates">
+      <div class="menu__cat-banner">
+        <img src="img/dish-03.jpg" alt="Four à bois NOMAÏ" />
+        <div class="menu__cat-banner-text">
+          <h3>Pâtes & Risottos</h3>
+          <p>Fraîches et faites maison · Cuites au four à bois</p>
+        </div>
+      </div>
+      <p class="menu__intro-note">🍝 Toutes nos pâtes sont fraîches et faites maison chaque matin</p>
+      <div class="menu__section-label">Pâtes</div>
+      <div class="dish-list dish-list--2col">
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Paccheri des Bois</span></div><p class="dish-item__desc">Crème de champignons, champignons frais et parmesan</p></div><span class="dish-item__price">95 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Paccheri à la Tomate Fraîche</span></div><p class="dish-item__desc">Stracciatella, parmesan et basilic frais</p></div><span class="dish-item__price">85 Dhs</span></div>
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Paccheri aux 4 Fromages</span></div><p class="dish-item__desc">Mozzarella, gorgonzola, parmesan, scamorza</p></div><span class="dish-item__price">95 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Spaghetti à l'Encre de Seiche</span></div><p class="dish-item__desc">Fruits de mer · Sauce au choix (tomate ou crémeuse)</p></div><span class="dish-item__price">135 Dhs</span></div>
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Spaghetti Bolognaise</span></div><p class="dish-item__desc">Viande hachée, sauce tomate et parmesan</p></div><span class="dish-item__price">95 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Tagliatelle au Saumon</span></div><p class="dish-item__desc">Saumon frais et fumé</p></div><span class="dish-item__price">110 Dhs</span></div>
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Tagliatelle Fermière</span></div><p class="dish-item__desc">Poulet sauté, champignons frais et bacon halal</p></div><span class="dish-item__price">110 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Tagliatelle à la Truffe</span><span class="dish-item__tag">★ Signature</span></div><p class="dish-item__desc">Crème de truffe et parmesan</p></div><span class="dish-item__price">120 Dhs</span></div>
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Tagliatelle Nomaï</span><span class="dish-item__tag">★ Signature</span></div><p class="dish-item__desc">Ricotta, noix concassées et crème d'épinards</p></div><span class="dish-item__price">110 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Lasagne Bolognaise</span></div><p class="dish-item__desc">À l'ancienne, cuite au four à bois</p></div><span class="dish-item__price">95 Dhs</span></div>
+      </div>
+      <div class="menu__section-label">Risottos</div>
+      <div class="dish-list dish-list--2col">
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Risotto Fruits de Mer</span></div><p class="dish-item__desc">Crustacés, sauce tomate</p></div><span class="dish-item__price">140 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Risotto à la Truffe</span><span class="dish-item__tag">★ Signature</span></div><p class="dish-item__desc">Champignons frais et pecorino</p></div><span class="dish-item__price">140 Dhs</span></div>
+      </div>
+    </div>
+
+    <!-- PIZZAS -->
+    <div class="menu__panel" id="tab-pizzas">
+      <!-- Real NOMAÏ pizza photo: Funghi au four à bois -->
+      <div class="menu__cat-banner">
+        <img src="img/dish-02.jpg" alt="Pizza NOMAÏ au four à bois" />
+        <div class="menu__cat-banner-text">
+          <h3>Nos Pizzas</h3>
+          <p>Pâte fermentée 72h · Cuites au four à bois</p>
+        </div>
+      </div>
+      <p class="menu__intro-note">🍕 Sauce tomate Mutti importée d'Italie · Pâte fermentée 72 heures pour plus de légèreté</p>
+      <div class="dish-list dish-list--2col">
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Margherita</span><span class="dish-item__tag dish-item__tag--veg">🌿 Végé</span></div><p class="dish-item__desc">Sauce tomate Mutti, mozzarella, basilic frais</p></div><span class="dish-item__price">75 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Quattro Formaggi</span></div><p class="dish-item__desc">Sauce blanche, mozzarella, gorgonzola, scamorza et parmesan</p></div><span class="dish-item__price">90 Dhs</span></div>
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Al Tonno</span></div><p class="dish-item__desc">Sauce tomate Mutti, mozzarella, thon, olive et oignon</p></div><span class="dish-item__price">85 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Funghi</span></div><p class="dish-item__desc">Crème de champignons, mozzarella, scamorza et parmesan</p></div><span class="dish-item__price">110 Dhs</span></div>
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Frutti di Mare</span></div><p class="dish-item__desc">Sauce tomate Mutti, mozzarella, fruits de mer, ail et persil</p></div><span class="dish-item__price">130 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Salmone</span></div><p class="dish-item__desc">Sauce blanche, mozzarella, saumon fumé, crème de fromage, ciboulette</p></div><span class="dish-item__price">110 Dhs</span></div>
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Burrata</span><span class="dish-item__tag">★ Signature</span></div><p class="dish-item__desc">Sauce tomate Mutti, burrata, roquette, tomates cerise et parmesan</p></div><span class="dish-item__price">125 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Ortolana</span><span class="dish-item__tag dish-item__tag--veg">🌿 Végé</span></div><p class="dish-item__desc">Sauce tomate Mutti, mozzarella, légumes grillés et parmesan</p></div><span class="dish-item__price">85 Dhs</span></div>
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Capriciosa</span></div><p class="dish-item__desc">Sauce tomate Mutti, mozzarella, viande hachée et poivrons colorés</p></div><span class="dish-item__price">95 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Americana</span></div><p class="dish-item__desc">Sauce tomate Mutti, mozzarella et pepperoni</p></div><span class="dish-item__price">95 Dhs</span></div>
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Al Pollo</span></div><p class="dish-item__desc">Sauce blanche, mozzarella, poulet et champignons frais</p></div><span class="dish-item__price">90 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Tartufo</span><span class="dish-item__tag">★ Signature</span></div><p class="dish-item__desc">Sauce blanche, mozzarella, truffe et parmesan</p></div><span class="dish-item__price">120 Dhs</span></div>
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">NOMAÏ</span><span class="dish-item__tag">★ Signature</span></div><p class="dish-item__desc">Sauce blanche, mozzarella, fromage de chèvre, fruit de saison, noix concassées</p></div><span class="dish-item__price">105 Dhs</span></div>
+      </div>
+    </div>
+
+    <!-- VIANDES & POISSONS -->
+    <div class="menu__panel" id="tab-viandes">
+      <!-- Real NOMAÏ meat dish photo -->
+      <div class="menu__cat-banner">
+        <img src="img/dish-04.jpg" alt="Viandes NOMAÏ" />
+        <div class="menu__cat-banner-text">
+          <h3>Viandes & Poissons</h3>
+          <p>Produits frais · Sauces maison</p>
+        </div>
+      </div>
+      <div class="menu__section-label">🥩 Viandes & Burgers</div>
+      <div class="dish-list dish-list--2col">
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Suprême de Poulet alla Parmigiana</span></div><p class="dish-item__desc">Sauce tomate, aubergines, mozzarella et parmesan</p></div><span class="dish-item__price">135 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Coquelet Fermier</span></div><p class="dish-item__desc">Mariné et grillé alla diavola, sauce relevée</p></div><span class="dish-item__price">130 Dhs</span></div>
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Filet de Bœuf</span><span class="dish-item__tag">★ Signature</span></div><p class="dish-item__desc">Sauce à la crème de champignons</p></div><span class="dish-item__price">180 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Burger du Chef façon NOMAÏ</span></div><p class="dish-item__desc">Steak haché, fromage raclette, tombée d'oignons, sauce maison · Servi avec frites maison</p></div><span class="dish-item__price">110 Dhs</span></div>
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Burger César</span></div><p class="dish-item__desc">Suprême de poulet pané, iceberg, parmesan, sauce césar · Servi avec frites maison</p></div><span class="dish-item__price">95 Dhs</span></div>
+      </div>
+      <div class="menu__section-label">🐟 Côté Mer</div>
+      <div class="dish-list dish-list--2col">
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Burger du Marin</span></div><p class="dish-item__desc">Filet de daurade, fromage cheddar, sauce tartare · Servi avec frites maison</p></div><span class="dish-item__price">110 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Pavé de Saumon Grillé</span><span class="dish-item__tag">★ Signature</span></div><p class="dish-item__desc">Sauce à la crème d'aneth citronné</p></div><span class="dish-item__price">175 Dhs</span></div>
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Filet de Daurade</span></div><p class="dish-item__desc">Sauce à la crème de fruits de mer</p></div><span class="dish-item__price">175 Dhs</span></div>
+      </div>
+    </div>
+
+    <!-- JAPONAIS -->
+    <div class="menu__panel" id="tab-japonais">
+      <!-- Real NOMAÏ wok noodles photo -->
+      <div class="menu__cat-banner">
+        <img src="img/dish-06.jpg" alt="Wok japonais NOMAÏ" />
+        <div class="menu__cat-banner-text">
+          <h3>Côté Japonais</h3>
+          <p>Fusion méditerranéo-japonaise · Sauces maison</p>
+        </div>
+      </div>
+      <div class="menu__section-label">🥟 Gyozas <span class="menu__sub-label">Servi par 5 pièces</span></div>
+      <div class="dish-list">
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Gyozas de Poulet</span></div><p class="dish-item__desc">Sauce ponzu</p></div><span class="dish-item__price">60 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Gyozas de Bœuf</span></div><p class="dish-item__desc">Sauce ponzu vinaigrée</p></div><span class="dish-item__price">70 Dhs</span></div>
+      </div>
+      <div class="menu__section-label">🍜 Plats</div>
+      <div class="dish-list dish-list--2col">
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Filet de Bœuf Grillé façon NOMAÏ</span><span class="dish-item__tag">★ Signature</span></div><p class="dish-item__desc">Sauce béarnaise asiatique</p></div><span class="dish-item__price">180 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Saumon Grillé à l'Unilatéral</span></div><p class="dish-item__desc">Sauce teriyaki maison</p></div><span class="dish-item__price">180 Dhs</span></div>
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Wok de Nouilles Poulet</span></div><p class="dish-item__desc">Sautés aux légumes, poulet</p></div><span class="dish-item__price">95 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Wok de Nouilles Bœuf</span></div><p class="dish-item__desc">Sautés aux légumes, bœuf</p></div><span class="dish-item__price">110 Dhs</span></div>
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Wok de Nouilles Crevettes</span></div><p class="dish-item__desc">Sautés aux légumes, crevettes</p></div><span class="dish-item__price">125 Dhs</span></div>
+      </div>
+      <div class="menu__section-label">🍣 Nigiri <span class="menu__sub-label">Servi par 3 pièces</span></div>
+      <div class="dish-list">
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Nigiri Saumon Flambé</span></div><p class="dish-item__desc">3 pièces</p></div><span class="dish-item__price">60 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Nigiri Saumon à la Truffe</span><span class="dish-item__tag">★ Signature</span></div><p class="dish-item__desc">3 pièces</p></div><span class="dish-item__price">60 Dhs</span></div>
+      </div>
+      <div class="menu__section-label">🍱 Rolls <span class="menu__sub-label">Servi par 8 pièces</span></div>
+      <div class="dish-list dish-list--2col">
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Salmon Roll</span></div><p class="dish-item__desc">Saumon, avocat</p></div><span class="dish-item__price">95 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Ebi Roll</span></div><p class="dish-item__desc">Gambas, légumes</p></div><span class="dish-item__price">95 Dhs</span></div>
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Salmon Spicy</span></div><p class="dish-item__desc">Saumon cuit, avocat</p></div><span class="dish-item__price">105 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Matsuri Roll</span></div><p class="dish-item__desc">Crabe, gambas, daurade</p></div><span class="dish-item__price">115 Dhs</span></div>
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Cracker Roll</span></div><p class="dish-item__desc">Crabe, saumon, avocat</p></div><span class="dish-item__price">115 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Dragon Roll</span></div><p class="dish-item__desc">Saumon, avocat, cream cheese</p></div><span class="dish-item__price">105 Dhs</span></div>
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Alaskan Roll</span></div><p class="dish-item__desc">Saumon fumé, cream cheese, œufs de truite</p></div><span class="dish-item__price">125 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Nomaï Roll</span><span class="dish-item__tag">★ Signature</span></div><p class="dish-item__desc">Mesclun de salade, sauce à la truffe, gambas</p></div><span class="dish-item__price">125 Dhs</span></div>
+      </div>
+      <div class="menu__section-label">🔥 Crispy Rolls <span class="menu__sub-label">Servi par 6 pièces</span></div>
+      <div class="dish-list">
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Crispy Salmon</span></div><p class="dish-item__desc">Gambas, saumon, cream cheese</p></div><span class="dish-item__price">85 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Ebi Fry</span></div><p class="dish-item__desc">Gambas, avocat</p></div><span class="dish-item__price">75 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="200"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Tago</span></div><p class="dish-item__desc">Poulet façon japonaise, dinde fumée, cheddar</p></div><span class="dish-item__price">75 Dhs</span></div>
+      </div>
+    </div>
+
+    <!-- DESSERTS -->
+    <div class="menu__panel" id="tab-desserts">
+      <!-- Chef NOMAÏ photo for desserts banner -->
+      <div class="menu__cat-banner">
+        <img src="img/dish-05.jpg" alt="Chef pâtissier NOMAÏ" />
+        <div class="menu__cat-banner-text">
+          <h3>Desserts</h3>
+          <p>Créations du chef pâtissier · Faites maison</p>
+        </div>
+      </div>
+      <div class="dish-list dish-list--2col">
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Cipriani au Citron</span></div><p class="dish-item__desc">Biscuit moelleux et meringue brûlée</p></div><span class="dish-item__price">60 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Moelleux Guanaja &amp; Fleur de Sel</span><span class="dish-item__tag">★ Signature</span></div><p class="dish-item__desc">Moelleux Guanaja, caramel chocolat et fleur de sel</p></div><span class="dish-item__price">65 Dhs</span></div>
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Le Nomaï Pistache</span><span class="dish-item__tag">★ Signature</span></div><p class="dish-item__desc">Biscuit moelleux pistache, crémeux pistache, praliné pistache fleur de sel</p></div><span class="dish-item__price">70 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Tarte Tiramisu</span></div><p class="dish-item__desc">Sablé chocolat, biscuité café, praliné noisette café, crème vanille &amp; cacao</p></div><span class="dish-item__price">60 Dhs</span></div>
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Tarte Tatin</span></div><p class="dish-item__desc">Biscuit breton fleur de sel, pommes confites et caramélisées, crème vanille</p></div><span class="dish-item__price">65 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Dulce de Leche Cheesecake</span></div><p class="dish-item__desc">Cheesecake onctueux au caramel de lait</p></div><span class="dish-item__price">60 Dhs</span></div>
+      </div>
+      <div class="menu__section-label">👶 Menu Enfant <span class="menu__sub-label">Tout à 70 Dhs · Avec frites maison</span></div>
+      <div class="dish-list dish-list--2col">
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Chicken Nuggets</span></div><p class="dish-item__desc">Frites maison, sauce BBQ</p></div><span class="dish-item__price">70 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Cheeseburger</span></div><p class="dish-item__desc">Et ses frites maison</p></div><span class="dish-item__price">70 Dhs</span></div>
+        <div class="dish-item reveal"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Spaghetti Bolognaise</span></div><p class="dish-item__desc">Sauce tomate maison</p></div><span class="dish-item__price">70 Dhs</span></div>
+        <div class="dish-item reveal" data-delay="100"><div class="dish-item__body"><div class="dish-item__top"><span class="dish-item__name">Cheese Pizza</span></div><p class="dish-item__desc">Sauce tomate, mozzarella</p></div><span class="dish-item__price">70 Dhs</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ GALERIE ══ -->
+  <section class="galerie" id="galerie">
+    <div class="galerie__header">
+      <span class="section-eyebrow">Notre Univers</span>
+      <h2 class="section-title reveal">L'art dans <em>l'assiette</em></h2>
+      <p class="section-sub reveal">Photographies de nos plats & de notre maison</p>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="galerie__filters reveal">
+      <button class="gal-filter active" data-filter="all">Tous</button>
+      <button class="gal-filter" data-filter="plats">Nos Plats</button>
+      <button class="gal-filter" data-filter="japonais">Côté Japonais</button>
+      <button class="gal-filter" data-filter="desserts">Desserts</button>
+      <button class="gal-filter" data-filter="equipe">L'Équipe</button>
+    </div>
+
+    <div class="galerie__grid" id="galerieGrid">
+
+      <!-- ─ Large hero: table spread (tous plats) ─ -->
+      <div class="gal-item gal-item--large reveal" data-cat="plats">
+        <img src="img/NOMAI-27.jpg" alt="Table NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>La Table NOMAÏ</span></div>
+      </div>
+
+      <!-- Pizza americana -->
+      <div class="gal-item reveal" data-delay="50" data-cat="plats">
+        <img src="img/NOMAI-09.jpg" alt="Pizza NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>Pizza Americana</span></div>
+      </div>
+
+      <!-- Pasta stracciatella -->
+      <div class="gal-item reveal" data-delay="100" data-cat="plats">
+        <img src="img/NOMAI-11.jpg" alt="Pasta NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>Paccheri à la Tomate</span></div>
+      </div>
+
+      <!-- Sushi rolls (crispy) -->
+      <div class="gal-item reveal" data-delay="50" data-cat="japonais">
+        <img src="img/NOMAI-10.jpg" alt="Sushis NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>Crispy Rolls</span></div>
+      </div>
+
+      <!-- Salmon roll -->
+      <div class="gal-item reveal" data-delay="100" data-cat="japonais">
+        <img src="img/NOMAI-21.jpg" alt="Salmon Roll NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>Salmon Roll</span></div>
+      </div>
+
+      <!-- Aubergines miso (tall) -->
+      <div class="gal-item gal-item--tall reveal" data-delay="150" data-cat="japonais">
+        <img src="img/NOMAI-23.jpg" alt="Aubergines miso NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>Aubergines au Miso</span></div>
+      </div>
+
+      <!-- Filet de bœuf branded board -->
+      <div class="gal-item reveal" data-delay="50" data-cat="plats">
+        <img src="img/NOMAI-25.jpg" alt="Filet de bœuf NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>Filet de Bœuf</span></div>
+      </div>
+
+      <!-- Crispy shrimp -->
+      <div class="gal-item reveal" data-delay="100" data-cat="japonais">
+        <img src="img/NOMAI-26.jpg" alt="Crevettes NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>Ebi Fry</span></div>
+      </div>
+
+      <!-- Salade poisson -->
+      <div class="gal-item reveal" data-delay="50" data-cat="plats">
+        <img src="img/NOMAI-15.jpg" alt="Salade daurade NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>Filet de Daurade</span></div>
+      </div>
+
+      <!-- Octopus / poulpe -->
+      <div class="gal-item reveal" data-delay="100" data-cat="plats">
+        <img src="img/NOMAI-14.jpg" alt="Poulpe rôti NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>Poulpe Rôti</span></div>
+      </div>
+
+      <!-- Salade russe / seafood (large) -->
+      <div class="gal-item gal-item--large reveal" data-delay="50" data-cat="plats">
+        <img src="img/NOMAI-28.jpg" alt="Salade fruits de mer NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>Salade de Fruits de Mer</span></div>
+      </div>
+
+      <!-- Fish with greens -->
+      <div class="gal-item reveal" data-delay="100" data-cat="plats">
+        <img src="img/NOMAI-24.jpg" alt="Poisson NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>Saumon & Légumes</span></div>
+      </div>
+
+      <!-- Dessert NOMAÏ branded (overhead) -->
+      <div class="gal-item reveal" data-delay="50" data-cat="desserts">
+        <img src="img/NOMAI-12.jpg" alt="Dessert NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>Le Dessert NOMAÏ</span></div>
+      </div>
+
+      <!-- Tarte Tatin -->
+      <div class="gal-item reveal" data-delay="100" data-cat="desserts">
+        <img src="img/NOMAI-17.jpg" alt="Tarte Tatin NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>Tarte Tatin</span></div>
+      </div>
+
+      <!-- Macarons -->
+      <div class="gal-item reveal" data-delay="150" data-cat="desserts">
+        <img src="img/NOMAI-18.jpg" alt="Macarons NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>Macarons</span></div>
+      </div>
+
+      <!-- Desserts assortis -->
+      <div class="gal-item reveal" data-delay="50" data-cat="desserts">
+        <img src="img/NOMAI-19.jpg" alt="Pâtisseries NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>Pâtisseries du Chef</span></div>
+      </div>
+
+      <!-- Salle NOMAÏ (ambiance) -->
+      <div class="gal-item reveal" data-delay="100" data-cat="equipe">
+        <img src="img/dish-01.jpg" alt="Salle NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>La Salle Principale</span></div>
+      </div>
+
+      <!-- Chef principal (portrait) -->
+      <div class="gal-item reveal" data-delay="50" data-cat="equipe">
+        <img src="img/NOMAI-05.jpg" alt="Chef NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>Notre Chef</span></div>
+      </div>
+
+      <!-- Chef japonais (couteau) -->
+      <div class="gal-item reveal" data-delay="100" data-cat="equipe">
+        <img src="img/NOMAI-06.jpg" alt="Chef japonais NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>Chef Japonais</span></div>
+      </div>
+
+      <!-- Chef pizzaiolo au four -->
+      <div class="gal-item reveal" data-delay="150" data-cat="equipe">
+        <img src="img/NOMAI-07.jpg" alt="Chef pizzaiolo NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>Chef Pizzaiolo</span></div>
+      </div>
+
+      <!-- Chef with pizza dough balls -->
+      <div class="gal-item reveal" data-delay="50" data-cat="equipe">
+        <img src="img/NOMAI-08.jpg" alt="Pâtons NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>La Pâte Fermentée 72h</span></div>
+      </div>
+
+      <!-- Group chefs NOMAÏ (3 personnes) -->
+      <div class="gal-item reveal" data-delay="100" data-cat="equipe">
+        <img src="img/chefs_nomai-1.jpg" alt="Équipe NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>Notre Équipe</span></div>
+      </div>
+
+      <!-- Salade russe close-up -->
+      <div class="gal-item reveal" data-delay="50" data-cat="plats">
+        <img src="img/NOMAI-29.jpg" alt="Salade NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>Salade de la Mer</span></div>
+      </div>
+
+      <!-- Dessert NOMAÏ side view -->
+      <div class="gal-item reveal" data-delay="100" data-cat="desserts">
+        <img src="img/NOMAI-13.jpg" alt="Dessert signature NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>Dessert Signature</span></div>
+      </div>
+
+      <!-- Aubergines miso (angle différent, tenue verte) -->
+      <div class="gal-item reveal" data-delay="150" data-cat="japonais">
+        <img src="img/NOMAI-22.jpg" alt="Aubergines miso NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>Nasu Dengaku</span></div>
+      </div>
+
+      <!-- Chef dressing salade en service -->
+      <div class="gal-item reveal" data-delay="50" data-cat="plats">
+        <img src="img/NOMAI-16.jpg" alt="Dressage NOMAÏ" class="gal-img" />
+        <div class="gal-overlay"><span>Le Soin du Dressage</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ TÉMOIGNAGES ══ -->
+  <section class="avis" id="avis">
+    <div class="avis__header">
+      <span class="section-eyebrow">Avis TripAdvisor</span>
+      <h2 class="section-title reveal">Ce qu'ils <em>disent de nous</em></h2>
+    </div>
+    <div class="avis__track">
+      <div class="avis__inner" id="avisInner">
+        <div class="avis-card">
+          <div class="avis-card__stars">★★★★★</div>
+          <blockquote>"Une expérience culinaire unique à Fès ! La pizza pâte fermentée 72h est une révélation. Le cadre est magnifique, le service aux petits soins. Le Nomaï Roll est exceptionnel. On y retourne dès que possible !"</blockquote>
+          <div class="avis-card__author">
+            <div class="avis-avatar" style="background:linear-gradient(135deg,#c0392b,#e74c3c)">SM</div>
+            <div><strong>Salma M.</strong><span>Fès · TripAdvisor</span></div>
+          </div>
+        </div>
+        <div class="avis-card">
+          <div class="avis-card__stars">★★★★★</div>
+          <blockquote>"Le meilleur restaurant de Fès sans hésitation. Les tagliatelles à la truffe sont divines et les sushis sont dignes d'un restaurant japonais haut de gamme. L'espace est sublime — on se croirait à Paris ou à Tokyo !"</blockquote>
+          <div class="avis-card__author">
+            <div class="avis-avatar" style="background:linear-gradient(135deg,#1a3a5c,#2563eb)">YB</div>
+            <div><strong>Youssef B.</strong><span>Casablanca · TripAdvisor</span></div>
+          </div>
+        </div>
+        <div class="avis-card">
+          <div class="avis-card__stars">★★★★★</div>
+          <blockquote>"Nous avons organisé un dîner d'affaires chez Nomaï. Accueil chaleureux, menu varié et raffiné, service impeccable. Le filet de bœuf façon NOMAÏ et la sauce béarnaise asiatique sont une merveille ! Nos invités étaient impressionnés."</blockquote>
+          <div class="avis-card__author">
+            <div class="avis-avatar" style="background:linear-gradient(135deg,#2d6b3a,#16a34a)">KA</div>
+            <div><strong>Karim A.</strong><span>Rabat · TripAdvisor</span></div>
+          </div>
+        </div>
+        <div class="avis-card">
+          <div class="avis-card__stars">★★★★★</div>
+          <blockquote>"Un concept fusion absolument réussi. Jamais je n'aurais imaginé manger une aussi bonne pizza et d'aussi bons sushis au même endroit. Le dessert Le Nomaï Pistache est une bombe de saveurs. Adresse à connaître absolument !"</blockquote>
+          <div class="avis-card__author">
+            <div class="avis-avatar" style="background:linear-gradient(135deg,#7c3aed,#2563eb)">LF</div>
+            <div><strong>Laura F.</strong><span>Paris · TripAdvisor</span></div>
+          </div>
+        </div>
+        <div class="avis-card">
+          <div class="avis-card__stars">★★★★★</div>
+          <blockquote>"Le cadre est à couper le souffle — l'architecture d'Ali Lahlou est bluffante. L'olivier au centre de la salle est magnifique. Côté cuisine, les pâtes fraîches maison et le risotto à la truffe sont parfaits. Une vraie expérience gastronomique."</blockquote>
+          <div class="avis-card__author">
+            <div class="avis-avatar" style="background:linear-gradient(135deg,#b45309,#d97706)">NE</div>
+            <div><strong>Nora E.</strong><span>Marrakech · TripAdvisor</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="avis__nav">
+      <button class="avis-prev" id="avisPrev">←</button>
+      <div class="avis__dots" id="avisDots"></div>
+      <button class="avis-next" id="avisNext">→</button>
+    </div>
+  </section>
+
+  <!-- ══ RÉSERVATION ══ -->
+  <section class="reservation" id="reservation">
+    <div class="resa__bg"></div>
+    <div class="resa__inner">
+      <div class="resa__left reveal-left">
+        <span class="section-eyebrow light">Réservation</span>
+        <h2 class="section-title light">Réservez votre<br/><em>table chez NOMAÏ</em></h2>
+        <p>Disponible 7j/7 · Déjeuner &amp; Dîner<br/>Confirmation rapide par téléphone</p>
+        <div class="resa__hours">
+          <div class="hours-row">
+            <span>Lundi – Jeudi</span>
+            <span>12h00 – 22h00</span>
+          </div>
+          <div class="hours-row">
+            <span>Vendredi – Samedi</span>
+            <span>12h00 – 23h00</span>
+          </div>
+          <div class="hours-row">
+            <span>Dimanche</span>
+            <span>12h00 – 22h00</span>
+          </div>
+        </div>
+        <div class="resa__tel">
+          <span>Réservation par téléphone :</span>
+          <a href="tel:+212661800981">+212 661-800981</a>
+        </div>
+      </div>
+      <div class="resa__right reveal-right">
+        <form class="resa-form" id="resaForm" novalidate>
+          <!-- Web3Forms access key — remplacez YOUR_ACCESS_KEY par votre clé obtenue sur web3forms.com -->
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" />
+          <input type="hidden" name="subject" value="🍽️ Nouvelle demande de réservation — NOMAÏ" />
+          <input type="hidden" name="from_name" value="Site NOMAÏ" />
+          <!-- Champ honeypot anti-spam (invisible) -->
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Prénom &amp; Nom *</label>
+              <input type="text" id="resaNom" name="Nom" placeholder="Mohammed Alami" required />
+            </div>
+            <div class="form-group">
+              <label>Téléphone *</label>
+              <input type="tel" id="resaTel" name="Telephone" placeholder="+212 6XX XX XX XX" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" id="resaEmail" name="email" placeholder="votre@email.com" />
+            </div>
+            <div class="form-group">
+              <label>Nombre de couverts *</label>
+              <select id="resaCvts" name="Couverts" required>
+                <option value="">Choisir</option>
+                <option>1 personne</option>
+                <option>2 personnes</option>
+                <option>3 personnes</option>
+                <option>4 personnes</option>
+                <option>5 personnes</option>
+                <option>6 personnes</option>
+                <option>7 – 10 personnes</option>
+                <option>+ de 10 personnes</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Date souhaitée *</label>
+              <input type="date" id="resaDate" name="Date" required />
+            </div>
+            <div class="form-group">
+              <label>Service *</label>
+              <select id="resaService" name="Service" required>
+                <option value="">Choisir</option>
+                <option>Déjeuner (12h – 15h)</option>
+                <option>Dîner (19h – 22h)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Occasion spéciale</label>
+            <select id="resaOccasion" name="Occasion">
+              <option value="">Aucune en particulier</option>
+              <option>Anniversaire</option>
+              <option>Dîner romantique</option>
+              <option>Repas d'affaires</option>
+              <option>Repas en famille</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Demande particulière</label>
+            <textarea id="resaMsg" name="Message" rows="3" placeholder="Allergies, demande spéciale…"></textarea>
+          </div>
+          <button type="submit" class="btn btn--gold full-w" id="resaBtn">
+            Envoyer ma demande
+            <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </button>
+          <p class="form-note">Confirmation rapide · Annulation libre</p>
+        </form>
+        <div class="resa-success" id="resaSuccess">
+          <div class="success-icon">✦</div>
+          <h3>Demande envoyée !</h3>
+          <p>Nous vous confirmons votre réservation très prochainement. À très bientôt chez NOMAÏ !</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <div class="contact__map reveal-left">
+        <div class="map-art">
+          <div class="map-bg"></div>
+          <div class="map-streets"></div>
+          <div class="map-pin">
+            <div class="pin-dot"></div>
+            <div class="pin-pulse"></div>
+            <div class="pin-label">NOMAÏ · Fès</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact__info reveal-right">
+        <span class="section-eyebrow">Nous Trouver</span>
+        <h2 class="section-title">Venez vivre<br/>l'expérience NOMAÏ</h2>
+        <div class="info-items">
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div>
+              <strong>Adresse</strong>
+              <span>Champs de Course, Lot. Prestigia<br/>RDC Av. Omar Ibnou Khattab<br/>Fès 30000, Maroc</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">📞</div>
+            <div>
+              <strong>Téléphone</strong>
+              <a href="tel:+212661800981">+212 661-800981</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">🌐</div>
+            <div>
+              <strong>Site web</strong>
+              <a href="https://nomai.ma" target="_blank">nomai.ma</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">🕐</div>
+            <div>
+              <strong>Horaires</strong>
+              <span>Lun–Jeu : 12h–22h<br/>Ven–Sam : 12h–23h · Dim : 12h–22h</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">🅿️</div>
+            <div>
+              <strong>Services</strong>
+              <span>Parking gratuit · WiFi · Non-fumeur</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact__social">
+          <a href="https://nomai.ma" target="_blank">Site officiel</a>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__logo">✦ NOMAÏ</div>
+        <p>Restaurant gastronomique fusion<br/>Méditerranéen &amp; Japonais · Fès, Maroc</p>
+        <div class="footer__stars">★★★★★ · TripAdvisor Fès</div>
+      </div>
+      <div class="footer__nav">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#histoire">Notre Histoire</a></li>
+          <li><a href="#menu">La Carte</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#reservation">Réservation</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__nav">
+        <h4>La Carte</h4>
+        <ul>
+          <li><a href="#menu">Salades</a></li>
+          <li><a href="#menu">Pâtes &amp; Risottos</a></li>
+          <li><a href="#menu">Pizzas</a></li>
+          <li><a href="#menu">Viandes &amp; Poissons</a></li>
+          <li><a href="#menu">Sushis</a></li>
+          <li><a href="#menu">Desserts</a></li>
+        </ul>
+      </div>
+      <div class="footer__resa">
+        <h4>Réservation</h4>
+        <p>Disponible 7j/7</p>
+        <a href="#reservation" class="btn btn--gold">Réserver une table</a>
+        <p class="footer__tel"><a href="tel:+212661800981">+212 661-800981</a></p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 NOMAÏ Restaurant · Fès, Maroc · Tous droits réservés</span>
+      <div class="footer__legal">
+        <a href="#">Mentions légales</a>
+        <a href="#">RGPD</a>
+        <a href="https://nomai.ma" target="_blank">nomai.ma</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
